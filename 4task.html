@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Your Details:</legend>
+            Name:
+            <input type="text" name="name" required />
+
+            <br> Email:
+            <input type="text" name="email" pattern="[^ @]*@[^ @]*" required/>
+
+
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <br>
+            <label>
+             How did you hear about us?
+         </label>
+            <select>
+             <option value="Google">Google</option>
+             <option value="Youtube">Youtube</option>
+             <option value="Facebook">Facebook</option>
+             <option value="Twitter">Twitter</option>
+         </select>
+            <br>
+            <br> Would you visit again?
+            <br>
+            <input type="radio" name="a" value="Yes" />Yes
+            <input type="radio" name="a" value="No" />No
+            <input type="radio" name="a" value="Maybe" />Maybe
+
+            <br>
+            <br> Comments:
+            <br>
+            <textarea cols="80" rows="5" value="Comments"></textarea>
+            <br>
+            <br>
+            <input type="checkbox" required/> Sign me up for email updates<br>
+            <input type="submit" value="Submit review" />
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
